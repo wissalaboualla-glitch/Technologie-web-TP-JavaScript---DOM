@@ -1,0 +1,29 @@
+let input = document.getElementById("taskInput");
+let addBtn = document.getElementById("addBtn");
+let taskList = document.getElementById("taskList");
+
+addBtn.addEventListener("click", function(){
+
+    let task = input.value;
+
+    if(task != ""){
+        let li = document.createElement("li");
+        li.textContent = task;
+        let doneBtn = document.createElement("button");
+        doneBtn.textContent = "Terminer";
+
+        doneBtn.addEventListener("click", function(){
+            li.classList.toggle("done");
+        });
+        let deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Supprimer";
+
+        deleteBtn.addEventListener("click", function(){
+            li.remove();
+        });
+        li.appendChild(doneBtn);
+        li.appendChild(deleteBtn);
+        taskList.appendChild(li);
+        input.value = "";
+    }
+});
