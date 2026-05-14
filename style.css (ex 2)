@@ -1,0 +1,29 @@
+body{
+    font-family: Arial;
+    background-color: #88c1e4;
+    text-align: center;
+}
+
+input, button{
+    padding: 8px;
+    margin: 5px;
+}
+
+button{
+    background-color: rgb(93, 166, 218);
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+li{
+    background-color: rgb(163, 172, 175);
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: rgb(74, 136, 189);
+}
